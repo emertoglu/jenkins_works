@@ -17,7 +17,7 @@ pipeline {
 		
 		stage('environment') {
             steps {
-                echo 'jenkins version ${new_version}'
+                echo "jenkins version ${new_version}"
             }
         }
     }
