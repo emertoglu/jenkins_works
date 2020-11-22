@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+	environment{
+		new_version = '1.1'
+	}
+    stages {
+        stage('test') {
+            steps {
+                echo 'jenkins github testing'
+            }
+        }
+		stage('build') {
+            steps {
+                echo 'jenkins github building'
+            }
+        }
+		
+		stage('environment') {
+            steps {
+                echo 'jenkins version ${new_version}'
+            }
+        }
+    }
+}
