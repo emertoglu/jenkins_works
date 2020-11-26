@@ -8,9 +8,9 @@ pipeline {
         }
 		stage('build') {
             steps {
-                sh """
+                sh '''
                 echo merhaba
-                """
+               	'''
             }
         }
     }
