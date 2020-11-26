@@ -18,7 +18,7 @@ pipeline {
             }	
         }    
 	 
-	stage('OS_TYPE > JOB_BASE_NAME ') {
+	stage('OS_TYPE_JOB_BASE_NAME ') {
             steps {
                 sh ''' echo ${JOB_BASE_NAME} '''
             }	
