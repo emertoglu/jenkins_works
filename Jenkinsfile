@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('build') {
             steps {
-                sudo sh('../test/test.sh')
+                sh ''' echo ${WORKSPACE} '''
             }	
         }
     }
