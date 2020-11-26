@@ -6,13 +6,13 @@ pipeline {
                 echo 'jenkins github testing'
             }
         }
-	stage('build') {
+	stage('WORKSPACE path') {
             steps {
                 sh ''' echo ${WORKSPACE} '''
             }	
         }
 	    
-	stage('build') {
+	stage('JENKINS_HOME path') {
             steps {
                 sh ''' echo ${JENKINS_HOME} '''
             }	
