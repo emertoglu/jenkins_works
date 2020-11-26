@@ -17,6 +17,13 @@ pipeline {
                 sh ''' echo ${JENKINS_HOME} '''
             }	
         }    
+	 
+	stage('run sh ') {
+            steps {
+                sh ''' ./test.sh '''
+            }	
+        } 
+	    
 	    
     }
 }
