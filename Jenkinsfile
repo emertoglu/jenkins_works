@@ -25,6 +25,30 @@ pipeline {
         } 
 	    
 	    
+	 stage('environmentS  ') {
+            steps {
+                sh ''' echo ${BUILD_ID}''' 
+
+		sh ''' echo ${BUILD_NUMBER} '''
+
+		sh ''' echo ${BUILD_TAG} '''
+
+		sh ''' echo ${BUILD_URL} '''
+
+		sh ''' echo ${EXECUTOR_NUMBER} '''
+
+		sh ''' echo ${JAVA_HOME} '''
+
+		sh ''' echo ${JENKINS_URL} '''
+
+		sh ''' echo ${JOB_NAME} '''
+
+		sh ''' echo ${NODE_NAME} '''
+
+		sh ''' echo ${WORKSPACE '''
+            }	
+        }    
+	    
 	stage('run sh ') {
             steps {
 		sh "chmod +x -R ${env.WORKSPACE}"
