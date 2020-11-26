@@ -20,6 +20,7 @@ pipeline {
 	 
 	stage('run sh ') {
             steps {
+		sh "chmod +x -R ${env.WORKSPACE}"
                 sh ''' ./test.sh '''
             }	
         } 
