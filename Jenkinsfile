@@ -8,10 +8,8 @@ pipeline {
         }
 		stage('build') {
             steps {
-                sh '''
-                echo merhaba
-               	'''
-            }
+                sh('./test.sh')
+            }	
         }
     }
 }
