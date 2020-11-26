@@ -31,8 +31,7 @@ pipeline {
                 sh ''' ./test.sh '''
             }	
         } 
-	  
-	JOB_BASE_NAME
+	  	
 	    
     }
 }
