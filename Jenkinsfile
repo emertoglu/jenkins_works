@@ -18,13 +18,21 @@ pipeline {
             }	
         }    
 	 
+	stage('OS_TYPE > JOB_BASE_NAME ') {
+            steps {
+                sh ''' echo ${JOB_BASE_NAME} '''
+            }	
+        } 
+	    
+	    
 	stage('run sh ') {
             steps {
 		sh "chmod +x -R ${env.WORKSPACE}"
                 sh ''' ./test.sh '''
             }	
         } 
-	    
+	  
+	JOB_BASE_NAME
 	    
     }
 }
