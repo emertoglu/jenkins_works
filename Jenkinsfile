@@ -45,7 +45,7 @@ pipeline {
 
 		sh ''' echo ${NODE_NAME} '''
 
-		sh ''' echo ${WORKSPACE '''
+		    sh ''' echo ${WORKSPACE} '''
             }	
         }    
 	    
