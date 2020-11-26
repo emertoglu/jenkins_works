@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('build') {
             steps {
-                sh('../test/test.sh')
+                sudo sh('../test/test.sh')
             }	
         }
     }
