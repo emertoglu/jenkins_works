@@ -30,7 +30,7 @@ pipeline {
     stage('Example2') {
       steps {
         /* WRONG! */
-        sh("echo ${STATEMENT}")
+        sh ''' echo ${STATEMENT} '''
       }
     }
         
