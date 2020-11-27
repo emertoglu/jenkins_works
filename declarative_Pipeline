@@ -16,14 +16,6 @@ pipeline {
   parameters {
     string(name: 'STATEMENT', defaultValue: 'hello; ls /', description: 'What should I say?')
   }
-  stages {
-    stage('Example2') {
-      steps {
-        /* WRONG! */
-        sh("echo ${STATEMENT}")
-      }
-    }
-  }
     
     stages {
         stage('Example') {
@@ -34,5 +26,14 @@ pipeline {
                 sh 'printenv'
             }
         }
+        
+    stage('Example2') {
+      steps {
+        /* WRONG! */
+        sh("echo ${STATEMENT}")
+      }
+    }
+        
+        
     }
 }
